@@ -604,7 +604,7 @@ const ModalDialog = React.forwardRef(function ModalDialog(
       document.removeEventListener('keydown', handleEscapeKey);
     };
     // eslint-disable-next-line  react-hooks/exhaustive-deps -- https://github.com/carbon-design-system/carbon/issues/20452
-  }, [open]);
+  }, [open, enableDialogElement]);
 
   useEffect(() => {
     return () => {
